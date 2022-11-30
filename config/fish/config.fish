@@ -122,13 +122,16 @@ end
 set TERM_EMULATOR (ps -aux | grep (ps -p $fish_pid -o ppid=) | awk 'NR==1{print $11}')
 
 # Neofetch
-switch "$TERM_EMULATOR"
-case '*kitty*'
-	neofetch --backend 'kitty'
-case '*tmux*' '*login*' '*sshd*' '*konsole*'
-	neofetch --backend 'ascii' --ascii_distro 'arch_small' 
-case '*'
-	neofetch --backend 'w3m' --xoffset 34 --yoffset 34 --gap 0
-end
+# switch "$TERM_EMULATOR"
+# case '*kitty*'
+	# neofetch --backend 'kitty'
+# case '*tmux*' '*login*' '*sshd*' '*konsole*'
+	# neofetch --backend 'ascii' --ascii_distro 'arch_small'
+# case '*'
+	# neofetch --backend 'w3m' --xoffset 34 --yoffset 34 --gap 0
+# end
+
+# Freshfetch | rust alternative to neofetch
+freshfetch -a arch_small
 
 starship init fish | source

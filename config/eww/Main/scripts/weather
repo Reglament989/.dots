@@ -8,7 +8,7 @@ cache_weather_hex=${cache_dir}/weather-hex
 cache_weather_icon=${cache_dir}/weather-icon
 
 ## Weather data
-KEY=c0eebdb0641271ae724f9fb2a74fccc0
+KEY=4de8adc9b946b109e83722752b5b3f78
 UNIT="metric"	# Available options : 'metric' or 'imperial'
 city_id=702550
 
