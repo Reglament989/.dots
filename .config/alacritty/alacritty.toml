@@ -7,7 +7,8 @@ import = [
 ]
 
 [font]
-size = 18
+size = 16
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 
 [window]
-opacity = 0.95
+opacity = 0.99
